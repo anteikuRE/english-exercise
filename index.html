@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="imgs/tab-logo.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/descriptionSec.css" />
+    <link rel="stylesheet" href="./css/ExerciseSec.css" />
+    <link rel="stylesheet" href="./css/welcomeSec.css" />
+    <link rel="stylesheet" href="./css/observer.css" />
+    <link rel="stylesheet" href="./css/ResultsSec.css" />
+    <script type="module" defer src="./js/script.js"></script>
+    <script defer src="./js/IntersectionObserver.js"></script>
+    <!-- <script type="module" src="testscr.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="welcome hid">
+      Welcome to English describe exercise
+      <button class="start">Get Started</button>
+    </section>
+
+    <section class="description-of-exercise hid">
+      <p>Your task is to describe a picture as <b>detailed</b> as you could.</p>
+      <p>
+        When you're ready click on <b>Finish</b>, or if you dont like a picture
+        click on <b>Skip</b>.
+      </p>
+      <span class="description-pc"
+        >Your description would be&nbsp;<b>rated by amount</b>&nbsp;of
+        letters:</span
+      >
+      <span class="description-mobile"
+        >Your description would be rated by amount of letters:</span
+      >
+      <span
+        >More then&nbsp;<b>150</b>&nbsp;letters -&nbsp;<u>Amazing</u>🎉</span
+      >
+      <span>More then&nbsp;<b>100</b>&nbsp;letters -&nbsp;<u>Good</u>✨</span>
+      <span>More then&nbsp;<b>50</b>&nbsp;letters -&nbsp;<u>Fine</u>👍</span>
+      <svg class="arrow">
+        <use class="arrow-description" href="icons.svg#icon-arrow-right"></use>
+      </svg>
+    </section>
+
+    <div class="exercise hid">
+      <div class="placeholder"></div>
+
+      <form action="">
+        <textarea class="text-area" name="" id="" cols="30" rows="5"></textarea>
+        <p class="message">*Please add details or skip to next image</p>
+        <input type="submit" class="finish" value="Finish" />
+      </form>
+      <button class="skip">Skip</button>
+    </div>
+
+    <section class="results hid">
+      <p class="result-output"></p>
+      <button class="start continue">Continue</button>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+    </section>
+  </body>
+</html>

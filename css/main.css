@@ -1,0 +1,32 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    72deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 255, 133, 1) 0%,
+    rgba(0, 241, 255, 1) 100%
+  );
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  cursor: pointer;
+  transition: all 0.4s;
+
+  background: #00f2ff50;
+
+  width: 20%;
+  height: 2rem;
+  border: solid 1px black;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+button:hover {
+  background: #00f2fff1;
+}
+@media only screen and (max-width: 750px) {
+  button {
+    width: 50%;
+  }
+}
